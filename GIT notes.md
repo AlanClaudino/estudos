@@ -47,3 +47,7 @@ Git gives us full control of which changes in our working tree should be include
 - `git reset HEAD filename` retrieve a file from the latest commit into the staging area
 
 - `git checkout (commit hash) filename` retrieve a file from a previous commit
+
+## .gitignore
+
+We list on this file all files or directories in our repo we do not want git to track.
