@@ -98,3 +98,29 @@ Branches allow us to work in differnt verions of the file in parallel. Our edits
 - `git stash apply (stash reference)` apply a specific stash point
 
 - `git stash save "(description)"` create a stash point, be more descriptive
+
+## Git Remotes
+
+A remote is a repository in another location from where we are currently working. The term **origin** is a standard alias for the remote repository location.
+
+`orign/master` is a specialiazed branch, it is called a remote tracking branch. The job of this remote tracking branch is to tell us what the master branch looks like at origin
+
+## Git Remotes Commands
+
+- `git clone (URL)` Retrieve/Clone a repo
+
+- `git remote` List remotes (-v for detail)
+
+- `git checkout -b (branch name)` Create and checkout a branch
+
+- `git fetch (remote name)` Retrieve/download from a remote
+
+- `git merge (branch or tracking branch name)` merge branch or tracking-branch
+
+- `git push (remote name) (branch name)` Upload to a remote
+
+- `git commit -a -m "description"` stage and commit
+
+- `git branch -r` List remote branches
+
+- `git branch -a` List both local and remote branches
