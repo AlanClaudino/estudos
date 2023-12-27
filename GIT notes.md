@@ -51,3 +51,50 @@ Git gives us full control of which changes in our working tree should be include
 ## .gitignore
 
 We list on this file all files or directories in our repo we do not want git to track.
+
+## Git branches
+
+Branches allow us to work in differnt verions of the file in parallel. Our edits on one branch can be independent of work on other branches. We can then decide to incorporate (merge) on changes into other branches. Branches result in a separation of versions of the same files so we can have branches for different pourpuses.
+
+## Head
+
+`HEAD` is a pointer that allows git to know which branch we are currently working on. In git terminology, the `HEAD` pointer tells us which branch we have currently **checkedout**
+
+## Merge and Branches Commands
+
+- `git log` git history
+
+- `git log --all --decorate --oneline --graph` commit history graph
+
+- `git branch (branch-name)` create a branch
+
+- `git checkout (branch-name)` checkout a branch/move head pointer
+
+- `git commit -a -m "commit message"` commit all modified and tracked files in on command (bypass separate 'git add' command)
+
+- `git diff master..SDN` diff between 2 branches
+
+- `git merge (branch-name)` merge branches (fast-forward and 3-way merges)
+
+- `git branch --merged` see branches merged into the current branch
+
+- `git branch -d (branch-name)` delete a branch, only if already merged
+
+- `git branch -D (branch-name)` delete a branch, including if not already merged (exercise caution here)
+
+- `git merge --abort` abort a merge during a merge conflict situation
+
+- `git checkout (commit-hash)` checkout a commit directly, not through a branch, results in a detached HEAD state
+
+- `git stash` create a stash point
+
+- `git stash list` list stash points
+
+- `git stash list -p` list stash points and show diffs per stash
+
+- `git stash apply` apply most recent stash
+
+- `git stash pop` apply most recent stash, and remove it from saved stashes
+- `git stash apply (stash reference)` apply a specific stash point
+
+- `git stash save "(description)"` create a stash point, be more descriptive
